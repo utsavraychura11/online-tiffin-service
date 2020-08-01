@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order</title>
+</head>
+
+<body>
+    <div>
+        <h2>Order Details</h2>
+    </div>
+
+    <div>
+        <form action="index.html" method="POST">
+            <table>
+
+                <tr>
+                    <td>Type of Meal & Qunatity:<span class="red-star" style="color: red;">*</span></td>
+                    <td>
+                        <input type="checkbox" name="food[]" value="standard">Standard&nbsp;<input type="number" name="no_of_std" style="width:30px" min="1"><br>
+                        <input type="checkbox" name="room[]" value="mini">Mini &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="no_of_mini" style="width:30px" min="1"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email ID: <span class="red-star" style="color: red;">*</span></td>
+                    <td><input type="email" name="email" placeholder="Email" required></td>
+                </tr>
+                <tr>
+                    <td>Delivery Address: <span class="red-star" style="color: red;">*</span></td>
+                    <td><textarea rows="5" cols="50" required></textarea></td>
+                </tr>
+                <tr>
+                    <td>Pincode: <span class="red-star" style="color: red;">*</span></td>
+                    <td><input type="text" name="pin"> </td>
+                </tr>
+
+                <tr>
+                    <td>City: <span class="red-star" style="color: red;">*</span></td>
+                    <td><input type="tex" name="city" placeholder="City" required></td>
+                </tr>
+                <tr>
+                    <td>State: <span class="red-star" style="color: red;">*</span></td>
+                    <td><input type="state" name="state" placeholder="State" required></td>
+                </tr>
+
+            </table><br>
+            <p>Order will be Deleivered with in 30 minutes.</p>
+
+            <input type="submit" value="Deleiver">
+        </form>
+    </div>
+
+
+</body>
+
+</html>

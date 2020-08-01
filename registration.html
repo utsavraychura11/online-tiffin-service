@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <center>
+            <h1>Registration For Tiffin Service</h1>
+        </center>
+    </div>
+
+
+    <center>
+        <form action="index.html" method="POST">
+            <table>
+                <tr>
+                    <td>First name: <span class="red-star" style="color: red;">*</span></td>
+                    <td><input type="text" name="fname" placeholder="first name" required></td>
+                </tr>
+                <tr>
+                    <td>Middle name:</td>
+                    <td><input type="text" name="mname" placeholder="middle name" required></td>
+                </tr>
+                <tr>
+                    <td>Last name: <span class="red-star" style="color: red;">*</span></td>
+                    <td><input type="text" name="lname" placeholder="last name" required></td>
+                </tr>
+                <tr>
+                    <td>Gender: <span class="red-star" style="color: red;">*</span></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of Birth: <span class="red-star" style="color: red;">*</span></td>
+                    <td><input type="date" id="dob" required></td>
+                </tr>
+                <tr>
+                    <td>Email ID: <span class="red-star" style="color: red;">*</span></td>
+                    <td><input type="email" name="email" placeholder="Email" required></td>
+                </tr>
+                <tr>
+                    <td>Contact No.: <span class="red-star" style="color: red;">*</span></td>
+                    <td><input type="tel" name="phone" placeholder="Contact No" required></td>
+                </tr>
+                <tr>
+                    <td>Address: <span class="red-star" style="color: red;">*</span></td>
+                    <td><textarea rows="5" cols="50" required></textarea></td>
+                </tr>
+                <tr>
+                    <td>City: <span class="red-star" style="color: red;">*</span></td>
+                    <td><input type="text" name="city" placeholder="City" required></td>
+                </tr>
+                <tr>
+                    <td>State: <span class="red-star" style="color: red;">*</span></td>
+                    <td><input type="text" name="state" placeholder="State" required></td>
+                </tr>
+                <tr>
+                    <td>Password: <span class="red-star" style="color: red;">*</span></td>
+                    <td><input type="password" id="passwd1" placeholder="passwd1" min="6" required></td>
+                </tr>
+                <tr>
+                    <td>Re-type Password: <span class="red-star" style="color: red;">*</span></td>
+                    <td><input type="password" id="passwd2" placeholder="passwd2" min="6" required></td>
+                </tr>
+            </table><br>
+
+            <input type="submit" value="Register">
+        </form>
+    </center>
+
+</body>
+
+</html>
