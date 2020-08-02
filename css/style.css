@@ -50,6 +50,7 @@ header .navbar ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-decoration: none;
 }
 
 header .navbar ul li {
@@ -64,32 +65,86 @@ header .navbar ul li a {
     /* text-transform: uppercase; */
     color: #333333;
     position: relative;
+    text-decoration: none;
 }
 
 header .navbar ul li a:hover {
     color: #ffffff;
 }
 
-
-/* header .navbar ul li a::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    margin-top: -5px;
-    height: 2px;
-    left: 0px;
-    background-color: #ffffff;
-    width: 0;
-    transition: width .5s ease;
+.container1 {
+    width: 80%;
+    margin: 7rem auto 0;
 }
 
-header .navbar ul li a.active::before {
-    width: 100%;
+.container1 h2 {
+    text-align: center;
+    font-family: 'Lore', serif;
+    font-size: 1.8rem;
 }
 
-header .navbar ul li a:hover::before {
+.container1 .card-container {
+    margin: 0px 0px 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.container1 .card-container .card {
+    background-color: #f2f2f2;
+    border-radius: 0px;
+    font-family: 'Lora', serif;
+    font-size: 1.3rem;
+    text-align: center;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.container1 .card-container .card img {
+    border-radius: 10px;
+}
+
+.container1 .card-container .card ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.container1 .card-container .card .btn {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.container1 .card-container .card:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.container1 .card-container .card button {
+    font-family: "Lora", serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #6dce3a;
     width: 100%;
-} */
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.container1 .card-container .card a {
+    text-decoration: none;
+    color: white;
+}
+
+.container1 .card-container .card button:hover,
+.container1 .card-container .card button:active,
+.container1 .card-container .card button:focus {
+    background: #43A047;
+}
 
 
 /*Footer*/
