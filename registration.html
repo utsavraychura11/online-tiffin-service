@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
     <title>Registration Page</title>
     <link rel="stylesheet" href="css/register.css">
 </head>
@@ -19,42 +20,44 @@
             <div class="navbar" style="margin-right:28px;">
                 <ul>
                     <li><a href="#home" class="active " style="color: white;">Home</a></li>
-
                     <li><a href="contact.html ">Contact</a></li>
                     <li><a href="aboutus.html ">About</a></li>
-                    <!-- <li><a href="# ">Logout</a></li> -->
                 </ul>
             </div>
         </div>
     </header>
 
-
-    <div style="margin-left:-10px; margin-right: -10px; height: 100%;">
-        <div class="bg"></div>
+    <div id="displayData" style="margin:0px;color: black;">
+        <p id="temp"></p>
     </div>
 
-    <div class="login-page">
-        <div class="form" style="margin-top: -940px;">
-            <p style="background-color: #4CAF50"><span>Registration </span>Page</p>
-            <form class="register-form">
+    <div class="container-box">
 
-                <input type="text" placeholder="First name" required>
-                <input type="text" placeholder="Last Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" />
-                <input type="password" placeholder="Confirm Password" />
-                <input type="tel" placeholder="Contact No" required>
-                <!-- <input type="text" placeholder="Email" required> -->
-                <textarea rows="5" cols="50" placeholder="Address" required></textarea>
-                <!-- <input type="text" placeholder="City" required>
-                <input type="text" placeholder="State" required> -->
-                <button><a href="home.html" style="text-decoration: none; color: white;">create</a></button>
-                <p class="message" style="font-size: 18px; color: black;">Already registered? <a href="index.html">Sign In</a></p>
-            </form>
+        <div>
+            <div class="bg"></div>
         </div>
+        <div class="login-page">
+
+            <div class="form" style="margin-top: -725px;">
+                <p style="background-color: #4CAF50"><span>Registration </span>Page</p>
+                <form class="register-form">
+                    <input type="text" placeholder="First name" id="fname" required>
+                    <input type="text" placeholder="Last Name" id="lname" required>
+                    <input type="text" placeholder="Usename" id="uname" required>
+                    <input type="email" placeholder="Email" id="email" required>
+                    <input type="password" placeholder="Password" id="pass" required/>
+                    <input type="password" placeholder="Confirm Password" id="cpass" />
+                    <input type="tel" placeholder="Contact No" id="phone" required>
+                    <textarea rows="3" cols="50" placeholder="Address" id="add" required></textarea>
+                    <input type="submit" id="registerBtn" value="CREATE" style="color:white;">
+                    <p class="message" style="font-size: 18px; color: black;">Already registered? <a href="index.html">Sign In</a></p>
+                </form>
+            </div>
+        </div>
+
     </div>
 
-
+    <script src="js/registration.js"></script>
 </body>
 
 </html>
