@@ -16,10 +16,9 @@
                 <a href="# ">Meals<span>On</span>Wheels</a>
             </div>
 
-            <div class="navbar " style="margin-right:30px;">
+            <div class="navbar" style="margin-right:28px;">
                 <ul>
                     <li><a href="#home" class="active " style="color: white;">Home</a></li>
-
                     <li><a href="contact.html ">Contact</a></li>
                     <li><a href="aboutus.html ">About</a></li>
                 </ul>
@@ -27,22 +26,45 @@
         </div>
     </header>
 
-    <div style="margin-top: 50px;margin-left: -10px;margin-right: -10px; ">
-        <div class="bg "></div>
+    <div id="displayData" style="margin:0px;color: black;">
+        <p id="temp"></p>
     </div>
-    <div class="login-page ">
-        <div class="form " style="margin-top: -750px ">
-            <p style="background-color: #4CAF50; color: black; "><span>Login </span>Page</p>
-            <form class="login-form " method="POST ">
-                <input type="text " placeholder="Username " />
-                <input type="password " placeholder="Password " />
-                <button><a href="home.html " style="text-decoration: none; color: white; ">login</a></button>
-                <p class="message ">Not registered? <a href="registration.html ">Create an account</a></p>
-            </form>
+
+    <div class="box">
+        <header style="background-color: #4caf50;">
+            <div class="container ">
+                <div class="logo ">
+                    <a href="# ">Meals<span>On</span>Wheels</a>
+                </div>
+
+                <div class="navbar " style="margin-right:30px;">
+                    <ul>
+                        <li><a href="#home" class="active " style="color: white;">Home</a></li>
+
+                        <li><a href="contact.html ">Contact</a></li>
+                        <li><a href="aboutus.html ">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div style="margin-top: 50px;margin-left: -10px;margin-right: -10px; ">
+            <div class="bg"></div>
+        </div>
+        <div class="login-page ">
+            <div class="form " style="margin-top: -600px ">
+                <p style="background-color: #4CAF50; color: black; "><span>Login </span>Page</p>
+                <form class="login-form ">
+                    <input type="text" placeholder="Username" id="uname" />
+                    <input type="password" placeholder="Password" id="pass" />
+                    <input type="submit" id="loginBtn" value="LOGIN" style="color:white;">
+                    <p class="message ">Not registered? <a href="registration.html ">Create an account</a></p>
+                </form>
+            </div>
         </div>
     </div>
 
-
+    <script src="js/login.js"></script>
 </body>
 
 </html>
