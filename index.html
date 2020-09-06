@@ -3,68 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <link rel="stylesheet" href="css/login.css">
-    <title>Login Page</title>
+    <title>Navbar</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/7b1cae8ae3.js"></script>
+    <style>
+         :root {
+            --input-padding-x: 1.5rem;
+            --input-padding-y: .75rem;
+        }
+        
+        body {
+            height: 100%;
+            background-position: center;
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+            /* margin-top: 165px; */
+            background-image: url("images/i4.jpg");
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        
+        .card-signin {
+            border: 0;
+            border-radius: 1rem;
+            overflow: hidden;
+        }
+        
+        .card-signin .card-title {
+            margin-bottom: 2rem;
+            font-weight: 270;
+            font-size: 1.4rem;
+        }
+        
+        .card-signin .card-img-left {
+            width: 45%;
+            background-size: cover;
+        }
+        
+        .card-signin .card-body {
+            padding: 2rem;
+        }
+        
+        .form-signin {
+            width: 100%;
+        }
+        
+        .form-signin .btn {
+            font-size: 80%;
+            border-radius: 5rem;
+            letter-spacing: .1rem;
+            font-weight: bold;
+            padding: 1rem;
+            transition: all 0.2s;
+        }
+        
+        .form-label-group {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+        
+        .form-label-group input {
+            height: auto;
+            border-radius: 2rem;
+        }
+        
+        .form-label-group>input,
+        .form-label-group>label {
+            padding: var(--input-padding-y) var(--input-padding-x);
+        }
+        
+        .form-label-group>label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            margin-bottom: 0;
+            line-height: 1.5;
+            color: #5cb85c;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+            /* transition: all .1s ease-in-out; */
+        }
+    </style>
+
 </head>
 
 <body>
 
-    <header style="background-color: #4caf50;">
-        <div class="container ">
-            <div class="logo ">
-                <a href="# ">Meals<span>On</span>Wheels</a>
-            </div>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-success" style="font-size: 20px;">
 
-            <div class="navbar" style="margin-right:28px;">
-                <ul>
-                    <li><a href="#home" class="active " style="color: white;">Home</a></li>
-                    <li><a href="contact.html ">Contact</a></li>
-                    <li><a href="aboutus.html ">About</a></li>
+
+        <a class="navbar-brand justify-content-start" href="#" style="font-size:24px">Meals<span
+                style="color: black;">On</span>Wheels</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container" style="margin-right: -700px;">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About</a>
+                    </li>
+
+
+
                 </ul>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <div id="displayData" style="margin:0px;color: black;">
-        <p id="temp"></p>
-    </div>
+    <!-- FORM -->
+    <div class="container">
+        <div class="row">
 
-    <div class="box">
-        <header style="background-color: #4caf50;">
-            <div class="container ">
-                <div class="logo ">
-                    <a href="# ">Meals<span>On</span>Wheels</a>
-                </div>
+            <div class="col-lg-10 col-xl-6 mx-auto" style="margin-top: 120px;">
 
-                <div class="navbar " style="margin-right:30px;">
-                    <ul>
-                        <li><a href="#home" class="active " style="color: white;">Home</a></li>
+                <div class="card card-signin flex-column my-5 bg-light">
 
-                        <li><a href="contact.html ">Contact</a></li>
-                        <li><a href="aboutus.html ">About</a></li>
-                    </ul>
+                    <div class="card-body">
+
+                        <h5 class="card-title text-center">Login Form</h5>
+
+                        <form class="form-signin">
+
+                            <div class="form-label-group">
+                                <input type="text" id="uname" class="form-control" placeholder="Username" required>
+
+                            </div>
+
+                            <div class="form-label-group">
+                                <input type="password" id="cpass" class="form-control" placeholder="Password" required>
+
+                            </div>
+
+                            <div class="form-label-group">
+                                <input type="tel" id="phone" class="form-control" placeholder="Contact Number" required>
+
+                            </div>
+
+                            <button class="btn btn-lg btn-success btn-block text-uppercase" type="submit" id="registerBtn"><a href="home.html" style="color: white; text-decoration:none;"">Login</a></button>
+                            <button class=" btn btn-link text-uppercase" type="submit"><a href="registration.html"
+                                        style="text-decoration:none;margin-left: 190px;color: #5cb85c;"">Register</a></button>
+
+
+
+                        </form>
+                    </div>
                 </div>
             </div>
-        </header>
-
-        <div style="margin-top: 50px;margin-left: -10px;margin-right: -10px; ">
-            <div class="bg"></div>
-        </div>
-        <div class="login-page ">
-            <div class="form " style="margin-top: -600px ">
-                <p style="background-color: #4CAF50; color: black; "><span>Login </span>Page</p>
-                <form class="login-form ">
-                    <input type="text" placeholder="Username" id="uname" />
-                    <input type="password" placeholder="Password" id="pass" />
-                    <input type="submit" id="loginBtn" value="LOGIN" style="color:white;">
-                    <p class="message ">Not registered? <a href="registration.html ">Create an account</a></p>
-                </form>
-            </div>
         </div>
     </div>
 
-    <script src="js/login.js"></script>
+
+    <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
+
 
 </html>
