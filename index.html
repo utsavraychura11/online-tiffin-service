@@ -145,13 +145,27 @@
 
                             </div>
 
-                            <div class="form-label-group">
-                                <input type="password" id="cpass" class="form-control" placeholder="Password">
+                            <script>
+                                function myFunction() {
+                                    var x = document.getElementById("pass");
+                                    if (x.type === "password") {
+                                        x.type = "text";
+                                    } else {
+                                        x.type = "password";
+                                    }
+                                }
+                            </script>
+
+                            <div class="form-label-group input-group">
+                                <input type="password" id="pass" class="form-control" placeholder="Password">
 
                             </div>
 
-
-
+                            <div class="form-check align-content-start ">
+                                <input type="checkbox" style="margin-left: 10px;" class="form-check-input" value="" id="check" onclick="myFunction()">
+                                <label for="check" class="form-check-label" style="margin-left: 30px;">Show Password</label>
+                            </div>
+                            <br>
                             <button class="btn btn-lg btn-success btn-block text-uppercase" type="submit" id="registerBtn">Login</button>
                             <!-- <button class=" btn btn-link text-uppercase" type="submit"><a href="registration.html"
                                         style="text-decoration:none;margin-left: 179px;color: #5cb85c;"">Register</a></button> -->
